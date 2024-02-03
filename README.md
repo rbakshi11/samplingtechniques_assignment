@@ -1,40 +1,30 @@
 # samplingtechniques_assignment
 # Credit Card Fraud Detection
 
-```mermaid
-graph TD
-    A[Start] -->|Load Data| B(Data Preprocessing)
-    B -->|Handle Missing Values| C(Explore & Visualize Class Distribution)
-    C -->|Apply Sampling Techniques| D(Model Training)
-    D -->|Train Models| E(Model Evaluation)
-    E -->|Evaluate Accuracy| F(Compare Results)
-    F -->|Compare Performance| G(Results and Conclusion)
-    G -->|Summarize Findings| H[End]
-```
 
 ## Overview
 
-This assignment focuses on exploring and implementing different sampling techniques for credit card fraud detection using a provided CSV dataset. The goal is to train five distinct models using various sampling methods and evaluate their accuracy in detecting fraudulent transactions. The models to be used are CatBoost, XGBoost, LightGBM, Support Vector Classifier (SVC), and Random Forest.
+This assignment focuses on exploring and implementing various sampling techniques to detect credit card fraud using the provided CSV dataset. The goal is to train five different models using different sampling methods and evaluate their accuracy in detecting fraudulent transactions. Models used are CatBoost, XGBoost, LightGBM, Support Vector Classifier (SVC), and Random Forest.
 
-## Dataset
+## dataset
 
-The dataset for this assignment is a CSV file containing credit card transactions. The data includes various features such as transaction amount, timestamp, and others. It is essential to handle imbalanced classes, as fraudulent transactions are typically rare compared to legitimate ones.
+The dataset for this assignment is a CSV file containing credit card transactions. The data includes various features such as transaction amount, timestamp and others. Unbalanced categories must be managed, as fraudulent transactions are generally rare compared to legitimate ones.
 
-### File: credit_card_data.csv
+### File name: credit_card_data.csv
 
-## Sampling Techniques
+## Sampling techniques
 
-The assignment involves applying five different sampling techniques to address the imbalanced nature of the data. The selected techniques are:
+In this assignment we have five different sampling techniques to address the unbalanced nature of the data. Selected techniques are:
 
-1. **Random Sampling:** Randomly selecting instances from the dataset without considering class distribution.
+1. **Random Sampling:** Selecting instances randomly from a dataset without considering the class distribution.
 
-2. **Stratified Sampling:** Ensuring that the proportion of classes in the sample is similar to that in the entire dataset.
+2. **Stratified sampling:** Ensuring that the proportion of classes in the sample is the same across the dataset.
 
-3. **Under-sampling:** Reducing the number of instances in the majority class to balance class distribution.
+3. **Under-sampling:** Reducing the number of samples in the majority class to balance the class distribution.
 
-4. **Over-sampling:** Increasing the number of instances in the minority class to balance class distribution.
+4. **Over-sampling:** Increase the number of samples in the minority class to balance the class distribution.
 
-5. **SMOTE (Synthetic Minority Over-sampling Technique):** Creating synthetic instances for the minority class to address class imbalance.
+5. **SMOTE (Artificial Minority Over-sampling Technique):** Creating artificial samples for minority class to remove class imbalance.
 
 ## Models
 
@@ -46,26 +36,26 @@ Five different machine learning models will be trained on each of the sampled da
 4. **Support Vector Classifier (SVC)**
 5. **Random Forest**
 
-## Instructions
+## instructions
 
-1. **Data Loading:**
-   - Load the credit card dataset from `credit_card_data.csv`.
-   - Understand the dataset's structure and features.
+1. **Loading data:**
+   - Load the credit card dataset from "credit_card_data.csv".
+   - Understand the structure and characteristics of data sets.
 
-2. **Data Preprocessing:**
-   - Handle missing values, if any.
-   - Explore and visualize the class distribution to understand the data imbalance.
+2. **Data preprocessing:**
+   - Handle missing values ​​if any.
+   - Check and visualize the distribution of classes to understand data imbalance.
 
 3. **Sampling:**
-   - Apply the five sampling techniques to create five different datasets.
-   - Ensure the balance between fraudulent and legitimate transactions in the sampled datasets.
+   - Use five sampling techniques to create five different data sets.
+   - Ensuring a balance between fraudulent and legitimate transactions in the sample dataset.
 
-4. **Model Training:**
-   - Train a CatBoost, XGBoost, LightGBM, SVC, and Random Forest model on each sampled dataset.
+4. **Model training:**
+   - Train CatBoost, XGBoost, LightGBM, SVC, and Random Forest models on each sampled dataset.
 
-5. **Model Evaluation:**
+5. **Evaluation of the model:**
    - Evaluate the accuracy of each model on a separate test dataset (not used during training).
-   - Compare the performance of models trained on different sampling techniques.
+   - Comparing the performance of trained models with different sampling techniques.
 
-6. **Results and Conclusion:**
-   - Summarize the findings, comparing the effectiveness of each sampling technique in improving model accuracy for credit card fraud detection.
+6. **Results and conclusions:**
+   - Compare the effectiveness of each sampling method in improving the accuracy of the model for credit card fraud detection and summarize the results.
